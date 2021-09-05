@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fffdd0;
+  font-family: "Roboto Mono", sans-serif;
+  color: #5a5753;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  position: static;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.5s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: rgba(181, 101, 29, 0.75);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(181, 101, 29, 1);
+  color: #fffdd0;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  width: 150px;
+  height: 40px;
+  position: relative;
+}
+button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #fffdd0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid rgba(181, 101, 29, 1);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+
+button:hover {
+  background-color: rgba(181, 101, 29, 0.75);
+}
+
+button:hover::before {
+  border-left: 20px solid rgba(181, 101, 29, 0.75);
+  transition: transform 0.5s ease;
+}
+
+h1 {
+  line-height: 2;
+  text-align: center;
+  padding: 15px;
+}
+
+h2 {
+    line-height: 2;
+    padding: 15px;
+  }
+
+.nav_hr {
+    border-top: 5px ridge rgba(181, 101, 29, .75);
+  }
+
+#sanitize, #wort, #fermentation {
+    padding-right: 25%;
+}
+
+.flexcontainer {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 320px) {
+  .flexcontainer {
+    display: block;
+  }
+}
+
+
+body {
+  padding-top: 35px;
+}
+
+img {
+  border-radius: 8px;
+  border: 1px solid rgba(181, 101, 29, .75);
+  width: 260px;
+  height: auto;
+}
+
+ul li {
+  position: relative;
+  left: 2em;
+}
+
+.panel h1 {
+  font-size: 24px;
+  line-height: 2px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.panel h1 a {
+  font-size: 8px;
+  vertical-align: super;
+  padding-left: 10px;
+}
+
+.panel h1 a:hover {
+  color: rgba(181, 101, 29, 0.75);
+  text-decoration: none;
+}
+
+#day_one {
+  padding: 15px;
+}
+
+#day_one > div {
+    /* padding-top: 15px; */
+    padding-left: 25%;
+    padding-right: 25%
+    line-height: 20px;
+}
+
+#day_one li {
+    list-style: decimal;
+  }
+
+#brew_journal {
+  padding-bottom: 1000px;
+  padding-top: 35px;
+}
