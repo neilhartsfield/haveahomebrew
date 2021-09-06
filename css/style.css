@@ -93,7 +93,7 @@ h1 {
   padding: 15px;
 }
 
-h2 {
+h3 {
     line-height: 2;
     padding: 15px;
   }
@@ -169,4 +169,18 @@ ul li {
 #brew_journal {
   padding-bottom: 1000px;
   padding-top: 35px;
+}
+
+.journal {
+  padding: 15px;
+  list-style: none;
+}
+
+.journal li {
+  padding-left: 25%;
+  line-height: 2em;
+}
+
+.journal li a:hover {
+  color: rgba(181, 101, 29, 0.75);
 }
